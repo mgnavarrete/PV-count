@@ -29,7 +29,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--mode", choices=["predict", "track"], default="predict",
                     help="predict = detections only, track = detections + tracking IDs")
-    ap.add_argument("--conf", type=float, default=0.5)
+    ap.add_argument("--conf", type=float, default=0.1)
     ap.add_argument("--imgsz", type=int, default=1024)
     ap.add_argument("--device", default=None, help="e.g. 0, 'cpu'")
     ap.add_argument("--tracker", default="bytetrack.yaml",
